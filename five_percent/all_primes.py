@@ -12,7 +12,7 @@ def find_prime(upper_limit):
     for x in range(2, upper_limit):
         if (x in primes):
             for z in range(x, (upper_limit), x):
-                if (x != z and z in primes):
+                if ((x != z) and (z in primes)):
                     del(primes[z])
 
     return list(primes.keys())
